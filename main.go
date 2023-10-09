@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	helper.LoadEnv()
+	helper.LoadEnvironment()
 	database.Migrate()
 	go helper.Cronjob()
 	router.UrlRouter()
